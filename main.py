@@ -442,13 +442,16 @@ eButton.grid(row=1, column=0, sticky="ew", padx=apx, pady=apy)
 # r ability
 def useR():
     global t, rCD, rt, mana, manaStat
+    import shop
+    shop.calcadap()
+    from shop import ucd
     if int(mana) >= int(rm):
         mana = int(mana) - int(rm)
         rUsed = int(t)
         rEnd = int(t) + int(rt)
-        rCD = int(rEnd) - int(rUsed)
+        rCD = int(rEnd) - int(rUsed) - int(ucd)
         rButton.config(text=str(rCD))
-        print(rUsed, rEnd, rCD)
+        print(rUsed, rEnd, rCD, ucd)
         rButton.config(command="")
         manaStat = (str(mana)+" / "+str(manam))
         manaStatLabel.config(text=manaStat)
@@ -464,6 +467,9 @@ def nextTurn():
     global t
     t = t + int(1)
     turnCounter.config(text=str(t))
+    import shop
+    shop.calcadap()
+    from shop import mhp,hpr,manam,mr
     # apply health regen
     global hp, hpStat
     if int(hp) < int(mhp):

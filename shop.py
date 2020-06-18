@@ -128,10 +128,10 @@ def giantsbelt():
     message = ("\nOwn "+str(giants)+" Giants Belt") # log item
     giantsHP = int(giants)*int(380) # item stat
     savelog()
-def juarimsfist():
+def jaurimsfist():
     global jf, jfAD, jfHP, message
     jf = int(jf) + int(1) # add item
-    message = ("\nOwn "+str(jf)+" Juarims Fist") # log item
+    message = ("\nOwn "+str(jf)+" Jaurims Fist") # log item
     jfAD = int(jf)*int(15) # item stat
     jfHP = int(jf)*int(200) # item stat
     savelog()
@@ -331,7 +331,7 @@ def infinityedge():
         bfsAD = int(bfs)*int(40)
         pick = int(pick)-int(1)
         pickAD = int(pick)*int(25)
-        saphMana = int(saph)-int(1)
+        saph = int(saph)-int(1)
         saphMana = int(saph)*int(25)
         message = ("\nObtained Infinity Edge!\nCurrently have:"+str(ie))
     else:
@@ -370,7 +370,7 @@ def steraksgage():
         rubyHP = int(ruby)*int(150)
         message = ("\nObtained Steraks Gage!\nCurrently have:"+str(gage))
     else:
-        message = ("\nNeed Juarims Fist, Pickaxe, and Ruby Crystal to complete")
+        message = ("\nNeed Jaurims Fist, Pickaxe, and Ruby Crystal to complete")
     savelog()
 def warmog():
     global warmog,warmogHP,warmogHPR,warmogAR,aegis,aegisAR,giants,giantsHP,rejb,rejbHPR,message
@@ -409,7 +409,7 @@ def youmuusghostblade():
     savelog()
 
 def calcadap():
-    global ad,ap,spd,adap,hp,hpr,mhp,mana,manam,mr,ar,message
+    global ad,ap,spd,adap,hp,hpr,mhp,mana,manam,mr,ar,ucd,message
     try:
         sdd, dbd, hp, mhp, mana, manam, hpr, mr
     except NameError:
@@ -425,9 +425,12 @@ def calcadap():
     adap = str(ad)+" / "+str(ap)+" / "+str(spd) #calc adap
     mhp = int(mhp)+int(blackHP)+int(deadmansHP)+int(edgeHP)+int(gageHP)+int(giantsHP)+int(jfHP)+int(kindleHP)+int(phgHP)+int(rubyHP)+int(warmogHP)
     hpr = int(lhpr)+int(hydraHPR)+int(rejbHPR)+int(warmogHPR)
-    manam = int(lm)+int(ie)+int(saph)
+    manam = int(lm)+int(ieMana)+int(saphMana)
     mr = int(lmr)+int(reaverMR)
     ar = int(lar)+int(aegisAR)+int(deadmansAR)+int(deathsAR)+int(warmogAR)
+    ucd = int(blackUCD)+int(cwhUCD)+int(duskUCD)+int(ghostUCD)+int(kindleUCD)+int(reaverUCD)
+    if int(ucd)>int(4):
+        ucd = int(4)
 
 def openShop():
     shop = tk.Tk()
@@ -553,7 +556,7 @@ def openShop():
 
     # close shop
     def shopDestroy():
-        from __main__ import adapLabel,hpStatLabel,manaStatLabel
+        from __main__ import adapLabel,hpStat,hpStatLabel,manaStat,manaStatLabel
         calcadap()
         adapLabel.config(text=adap)
         hpStat = (str(hp)+" / "+str(mhp))
