@@ -1,0 +1,48 @@
+Ravenous Hydra- 80 Attack Damage, 50 Health Regen, 20 Life Steal
+	Vampiric Sceptre- 15 Attack Damage, 10 Life steal
+	Pickaxe- 25 Attack Damage
+	Rejuvenation Bead- 25 Health Regen
+Dead Man’s Plate- 2x Base Movement Speed, 60 Armor, 425 Health
+	Aegis of the Legion- 30 Armor
+	Giant’s Belt- 380 Health
+	Boots of Speed- 2 Movement Speed
+Sterak’s Gage- 1.5x Attack Damage, 450 Health
+	Juarim’s Fist- 15 Attack Damage, 200 Health
+	Pickaxe- 25 Attack Damage
+	Ruby Crystal- 150 Health
+Duskblade of Draktharr- 60 Attack Damage, 2 Ultimate Cooldown Reduction
+	Serrated Dirk- 30 Attack Damage
+	Caulfield’s Warhammer- 20 Attack Damage, 1 Ultimate Cooldown Reduction
+	Longsword- 10 Attack Damage
+Edge of Night- 55 Attack Damage, 325 Health
+	Pickaxe- 25 Attack Damage
+	Serrated Dirk- 30 Attack Damage
+	Ruby Crystal- 150 Health
+Death’s Dance- 30 Armor, 35 Attack Damage, 15 Life steal
+	Aegis of the Legion- 30 Armor
+	Longsword- 10 Attack Damage
+	Vampiric Sceptre- 15 Attack Damage, 10 Life steal
+Yomuu’s Ghostblade- 55 Attack Damage, 1 Ultimate Cooldown Reduction, 4 Movement Speed
+	Caulfield’s Warhammer- 20 Attack Damage, 1 Ultimate Cooldown Reduction
+	Serrated Dirk- 30 Attack Damage
+	Boots of Speed- 2 Movement Speed
+Black Cleaver- 40 Attack Damage, 400 Health, 1 Ultimate Cooldown Reduction
+	Phage- 15 Attack Damage, 200 Health
+	Kindlegem- 100 Health, 1 Ultimate Cooldown Reduction
+	Longsword- 10 Attack Damage
+Warmog’s Armor- 800 Health, 200 Health Regen, 30 Armor
+	Aegis of the Legion- 30 Armor
+	Giant’s Belt- 380 Health
+	Rejuvenation Bead- 25 Health Regen
+Essence Reaver- 70 Attack Damage, 1 Ultimate Cooldown Reduction, 10 Mana Regen
+	B.F. Sword- 40 Attack Damage
+	Caulfield’s Warhammer-  20 Attack Damage, 1 Ultimate Cooldown Reduction
+	Tear of the Goddess- 5 Mana Regen
+Infinity Edge- 80 Attack Damage, 50 Mana
+	B.F. Sword- 40 Attack Damage
+	Pickaxe- 25 Attack Damage
+	Sapphire Crystal- 25 Mana
+Bloodthirster- 80 Attack Damage, 30 Life Steal
+	B.F. Sword- 40 Attack Damage
+	Vampiric Sceptre- 15 Attack Damage, 10 Life steal
+	Longsword- 10 Attack Damage
