@@ -9,7 +9,7 @@ import time
 version = "v0.0.1"
 
 # Check for updates
-print("Checking for client_file updates...")
+print("Checking for updates from GitHub.com/TristanPFox...")
 os.system("git pull")
 
 try:
