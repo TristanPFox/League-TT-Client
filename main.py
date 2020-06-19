@@ -81,6 +81,8 @@ legSelLabel = tk.Label(mainLegendFrame, text='Select a Legend:', bg=mainBg, heig
 legSelLabel.grid(row=0, column=0)
 LegendList = [
     "Jhin",
+    "Kayn",
+    "Shen",
     "Zed"
 ]
 chosenLegend = tk.StringVar(main)
@@ -94,6 +96,12 @@ def useLegend():
     sl=chosenLegend.get()
     if sl == "Jhin":
         selLegend = "Jhin"
+        legCheck = 1
+    elif sl == "Kayn":
+        selLegend = "Kayn"
+        legCheck = 1
+    elif sl == "Shen":
+        selLegend = "Shen"
         legCheck = 1
     elif sl == "Zed":
         selLegend = "Zed"
@@ -187,7 +195,7 @@ startGame.grid(row=0, column=0, padx=10, pady=5)
 main.mainloop()
 
 
-from legends import p,qt,qd,qm,wt,wd,wm,et,ed,em,rt,rd,rm,lad,lap,lspd,lhp,lhpr,lm,lmr,lar
+from legends import p,qt,qd,qm,wt,wd,wm,et,ed,em,rt,rd,rm,lad,lap,lspd,lhp,lhpr,lm,lmr,lar,legPortrait
 
 # Legend GUI
 legend = tk.Tk()
@@ -202,7 +210,7 @@ ability = tk.Frame(legend, bg='green', height=350)
 footer = tk.Frame(legend, bg='yellow', height=50)
 
 # layout of the main containers
-legend.grid_rowconfigure(0, weight=2)
+legend.grid_rowconfigure(0, weight=0)
 legend.grid_rowconfigure(1, weight=0)
 legend.grid_rowconfigure(2, weight=1)
 legend.grid_rowconfigure(3, weight=0)
@@ -229,6 +237,15 @@ footer.grid_columnconfigure(1, weight=1)
 footer.grid_columnconfigure(2, weight=1)
 footer.grid_columnconfigure(3, weight=1)
 footer.grid_columnconfigure(4, weight=1)
+
+# portrait
+#tk.Label(bg=loginBg).pack() # Spacer
+image = Image.open("portraits/"+legPortrait)
+image = image.resize((550,400), Image.ANTIALIAS)
+photo = ImageTk.PhotoImage(image)
+portrait = tk.Label(portrait,image=photo, bg="grey", text="\n\n\n")
+portrait.image = photo
+portrait.pack()
 
 # passive
 passiveTitle = tk.Label(passive, text="Passive:", bg='grey',  font=("Helvetica", 14, "bold"))

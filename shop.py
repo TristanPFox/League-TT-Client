@@ -73,6 +73,8 @@ except NameError:
     gage = int(0)
     gageADX = int(1)
     gageHP = int(0)
+    tear = int(0)
+    tearMR = int(0)
     vamp = int(0)
     vampAD = int(0)
     vampLS = int(0)
