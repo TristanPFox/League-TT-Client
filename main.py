@@ -20,7 +20,7 @@ except NameError:
     wCD = int(0)
     eCD = int(0)
     rCD = int(0)
-    f = open("itemlog.txt","w")
+    f = open("itemlog.txt","w+")
     f.close()
 
 # selLegend = "Jhin"
