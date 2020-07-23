@@ -256,7 +256,7 @@ def deadmansplate():
     savelog()
 def deathsdance():
     global deaths,deathsAR,deathsAD,deathsUCD,deathsLS,aegis,aegisAR,cwh,longsAD,vamp,vampAD,vampLS,message
-    if (int(aegis)>=1)&(int(cwh)>=1)&(int(vamp)>=1):
+    if (int(aegis)>=1)&(int(longs)>=1)&(int(vamp)>=1):
         deaths = int(deaths)+int(1)
         deathsAR = int(deaths)*int(30)
         deathsAD = int(deaths)*int(35)

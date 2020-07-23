@@ -169,6 +169,7 @@ showItems.grid(row=0, column=2, padx=10, pady=5)
 
 def partyLeadCheck():
     if (var1.get() == 1):
+        global l
         l = 'You are Party Lead'
         print(l)
         # add (open boss script) here
@@ -178,13 +179,15 @@ plcButton = tk.Checkbutton(mainPartyFrame, text='Party Leader',variable=var1, on
 plcButton.pack()
 
 def gameInit():
-    global legCheck,diffCheck,gmCheck
+    global legCheck,diffCheck,gmCheck,l
     useLegend()
     useDiff()
     useGM()
     print(str(legCheck), str(diffCheck), str(gmCheck))
     if ((legCheck==1) & (diffCheck==1) & (gmCheck==1)):
         print("All Selected!")
+        if l == 'You are Party Lead':
+            print("running as party lead, adding functions later...")
         main.destroy()
     else:
         tk.messagebox.showinfo(title="Not Ready!", message="Can't Start Yet!\nBe Sure to Select a Legend, Difficulty, and Chapter!")
